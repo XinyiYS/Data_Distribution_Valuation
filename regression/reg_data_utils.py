@@ -9,7 +9,7 @@ from utils import cwd
 
 def _get_CaliH():
 
-    with cwd(oj("datasets", "regression", "California_housing")):
+    with cwd(oj("./regression")):
         features = pd.read_csv("CaliH-NN_features.csv")
         labels = pd.read_csv("CaliH-labels.csv")
 
@@ -21,7 +21,8 @@ def _get_CaliH():
 
 
 def _get_KingH():
-    with cwd(oj("datasets", "regression", "House_sales")):
+    with cwd(oj("./regression")):
+
         features = pd.read_csv("KingH-NN_features.csv")
         labels = pd.read_csv("KingH-labels.csv")
 
@@ -33,7 +34,8 @@ def _get_KingH():
 
 def _get_FaceA():
 
-    with cwd(oj("datasets", "regression", "Face_Age")):
+    with cwd(oj("./")):
+
         features = pd.read_csv("face_age-CNN_features.csv")
         labels = pd.read_csv("face_age-labels.csv")
 
@@ -46,7 +48,8 @@ def _get_FaceA():
 
 def _get_census(year=15):
     if year == 17:
-        with cwd(oj("datasets", "regression", "US_Census")):
+        with cwd(oj("./regression")):
+
             features = pd.read_csv("USCensus-2017-NN_features.csv")
             labels = pd.read_csv("USCensus-2017-labels.csv")
 
@@ -54,7 +57,7 @@ def _get_census(year=15):
         y_train = torch.from_numpy(labels.values)
         print(f'US Census income 2017 dataset: X_train shape {X_train.shape}')
     elif year == 15:
-        with cwd(oj("datasets", "regression", "US_Census")):
+        with cwd(oj("./regression")):
             features = pd.read_csv("USCensus-2015-NN_features.csv")
             labels = pd.read_csv("USCensus-2015-labels.csv")
 
