@@ -1,0 +1,3 @@
+To successfully run the code `sh_run_experiments_regression.sh` in the parent directory, update the `sys.path.append("/home/xinyi/maplecg_nfs/codebase/Data_Distribution_Valuation")` in first line of the python files in this directory to have the correct file path.
+
+The python script/files in this directory share some utils methods with those in the parent directory (which is mostly for the classification setting).
