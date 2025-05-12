@@ -9,9 +9,9 @@ Recommended to use anaconda/miniconda to manage the environment, the requried pa
 
 ## Datasets:
 
-Due to the size restrictions of the files/directories on Github, the actual datasets are _not_ directly uploaded. Most image datasets are constructed/used via the methods from torchvision (so make sure to install torchvision).
+Due to the size restrictions of the files/directories on Github, the actual datasets are _not_ directly uploaded. Most image datasets (such as MNIST, CIFAR-10, CIFAR-100) are constructed/used via the corresponding methods from torchvision (so make sure to install torchvision).
 
-The datasets for regression are from Kaggle： [California housing](https://www.kaggle.com/datasets/camnugent/california-housing-prices), [Kings housing sales](https://www.kaggle.com/harlfoxem/housesalesprediction), and [US Census](https://www.kaggle.com/datasets/census/census-bureau-usa).
+The datasets for regression are from Kaggle [California housing](https://www.kaggle.com/datasets/camnugent/california-housing-prices), [Kings housing sales](https://www.kaggle.com/harlfoxem/housesalesprediction), and [US Census](https://www.kaggle.com/datasets/census/census-bureau-usa).
 
 
 # Usage
